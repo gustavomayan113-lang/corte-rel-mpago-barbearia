@@ -1,0 +1,159 @@
+/* =========================================================
+   secoes/agenda.css
+   ========================================================= */
+
+.agenda__grade {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.agenda__form {
+  padding: clamp(1.5rem, 3vw, 2.4rem);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--linha);
+  background: linear-gradient(160deg, rgba(21, 26, 43, 0.92) 0%, rgba(7, 8, 13, 0.95) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.agenda__form::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  background: var(--grad-ouro);
+}
+
+.agenda__form h3 {
+  font-family: var(--fonte-display);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: var(--e-2);
+}
+
+.agenda__form > p {
+  font-size: 0.94rem;
+  margin-bottom: var(--e-5);
+}
+
+.agenda__horarios-linha {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--e-3);
+  flex-wrap: wrap;
+}
+
+.agenda__horarios-linha small {
+  font-family: var(--fonte-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cinza-escuro);
+}
+
+.agenda__resumo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--e-4);
+  padding: var(--e-4);
+  border-radius: var(--r-md);
+  border: 1px dashed var(--linha-ouro);
+  background: rgba(227, 178, 60, 0.06);
+  flex-wrap: wrap;
+}
+
+.agenda__resumo b {
+  font-family: var(--fonte-titulo);
+  font-size: 1.05rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.agenda__resumo span {
+  font-family: var(--fonte-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--dourado);
+}
+
+/* painel de contato */
+.agenda__contato {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e-4);
+  position: sticky;
+  top: 110px;
+}
+
+.agenda__destaque {
+  padding: var(--e-5);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--linha-ouro);
+  background:
+    radial-gradient(110% 130% at 0% 0%, rgba(224, 27, 45, 0.22) 0%, transparent 60%),
+    var(--grafite);
+}
+
+.agenda__destaque h3 {
+  font-family: var(--fonte-display);
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: var(--e-2);
+}
+
+.agenda__destaque p {
+  font-size: 0.92rem;
+  margin-bottom: var(--e-4);
+}
+
+.agenda__destaque .preco-grande {
+  font-family: var(--fonte-display);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--dourado-claro);
+  margin-bottom: var(--e-4);
+}
+
+.agenda__destaque .preco-grande small {
+  display: block;
+  font-family: var(--fonte-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.2em;
+  color: var(--cinza-escuro);
+  text-transform: uppercase;
+}
+
+.agenda__oferta {
+  display: flex;
+  align-items: center;
+  gap: var(--e-2);
+  margin-top: var(--e-4);
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--r-sm);
+  background: rgba(61, 220, 132, 0.08);
+  border: 1px solid rgba(61, 220, 132, 0.28);
+  font-size: 0.8rem;
+  color: #9ef0bd;
+}
+
+.agenda__oferta svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .agenda__grade {
+    grid-template-columns: 1fr;
+  }
+  .agenda__contato {
+    position: static;
+  }
+}

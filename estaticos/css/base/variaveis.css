@@ -1,0 +1,115 @@
+/* =========================================================
+   base/variaveis.css  —  design tokens da Corte Relâmpago
+   ========================================================= */
+
+:root {
+  /* ---- cores base ---- */
+  --preto: #07080d;
+  --preto-2: #0b0e17;
+  --grafite: #0e1220;
+  --grafite-2: #151a2b;
+  --grafite-3: #1d2437;
+
+  /* ---- azul ---- */
+  --azul: #0e2a5c;
+  --azul-2: #163c85;
+  --azul-claro: #3b82f6;
+  --azul-luz: #8fc7ff;
+
+  /* ---- vermelho ---- */
+  --vermelho: #e01b2d;
+  --vermelho-escuro: #a1111f;
+  --vermelho-vivo: #ff2d46;
+
+  /* ---- dourado ---- */
+  --dourado: #e3b23c;
+  --dourado-claro: #f5d06a;
+  --dourado-escuro: #b1801a;
+
+  /* ---- neutros ---- */
+  --branco: #f7f8fb;
+  --branco-puro: #ffffff;
+  --cinza: #a7aec2;
+  --cinza-claro: #cfd4e2;
+  --cinza-escuro: #6b7390;
+
+  /* ---- linhas e vidro ---- */
+  --linha: rgba(255, 255, 255, 0.09);
+  --linha-forte: rgba(255, 255, 255, 0.18);
+  --linha-ouro: rgba(227, 178, 60, 0.28);
+  --vidro: rgba(14, 18, 32, 0.78);
+  --vidro-claro: rgba(255, 255, 255, 0.035);
+  --superficie: linear-gradient(170deg, rgba(20, 25, 41, 0.86) 0%, rgba(11, 14, 23, 0.92) 100%);
+
+  /* ---- gradientes ---- */
+  --grad-ouro: linear-gradient(135deg, var(--dourado-claro) 0%, var(--dourado) 45%, var(--dourado-escuro) 100%);
+  --grad-vermelho: linear-gradient(135deg, var(--vermelho-vivo) 0%, var(--vermelho-escuro) 100%);
+  --grad-azul: linear-gradient(135deg, var(--azul-luz) 0%, var(--azul-2) 55%, var(--azul) 100%);
+  --grad-escuro: linear-gradient(160deg, var(--grafite) 0%, var(--preto) 70%);
+  --grad-texto: linear-gradient(96deg, var(--branco-puro) 0%, var(--dourado-claro) 100%);
+
+  /* ---- tipografia ---- */
+  --fonte-display: "Bebas Neue", "Anton", "Oswald", Impact, sans-serif;
+  --fonte-titulo: "Barlow Condensed", "Oswald", "Arial Narrow", sans-serif;
+  --fonte-texto: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --fonte-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  --fs-display: clamp(2.9rem, 7vw, 5.8rem);
+  --fs-h1: clamp(2.1rem, 4.4vw, 3.4rem);
+  --fs-h2: clamp(1.7rem, 3vw, 2.4rem);
+  --fs-h3: clamp(1.12rem, 1.5vw, 1.35rem);
+  --fs-h4: 1rem;
+  --fs-lead: clamp(1rem, 1.1vw, 1.08rem);
+  --fs-pequeno: 0.875rem;
+  --fs-micro: 0.7rem;
+
+  --leading-display: 0.94;
+  --leading-titulo: 1.08;
+  --leading-corpo: 1.68;
+  --tracking-etiqueta: 0.18em;
+  --medida: 68ch;
+
+  /* ---- espaçamento ---- */
+  --e-1: 0.25rem;
+  --e-2: 0.5rem;
+  --e-3: 0.75rem;
+  --e-4: 1rem;
+  --e-5: 1.5rem;
+  --e-6: 2rem;
+  --e-7: 3rem;
+  --e-8: 4rem;
+  --e-9: 6rem;
+
+  --largura: 1200px;
+  --largura-estreita: 880px;
+  --sec-pad: clamp(4rem, 9vw, 7.5rem);
+
+  /* ---- raios ---- */
+  --r-sm: 6px;
+  --r-md: 10px;
+  --r-lg: 16px;
+  --r-xl: 22px;
+  --r-full: 999px;
+
+  /* ---- sombras ---- */
+  --sombra-sm: 0 2px 8px rgba(0, 0, 0, 0.28);
+  --sombra-md: 0 12px 28px rgba(0, 0, 0, 0.34);
+  --sombra-lg: 0 24px 56px rgba(0, 0, 0, 0.42);
+  --sombra-ouro: 0 6px 20px rgba(227, 178, 60, 0.16);
+  --sombra-vermelha: 0 6px 20px rgba(224, 27, 45, 0.2);
+  --brilho-ouro: 0 0 0 1px var(--linha-ouro);
+
+  /* ---- motion ---- */
+  --t-rapida: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --t-media: 0.24s cubic-bezier(0.4, 0, 0.2, 1);
+  --t-lenta: 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  --t-salto: 0.3s cubic-bezier(0.34, 1.4, 0.64, 1);
+
+  /* ---- z-index ---- */
+  --z-base: 1;
+  --z-fundo: 0;
+  --z-nav: 100;
+  --z-painel: 200;
+  --z-modal: 300;
+}
+

@@ -1,0 +1,120 @@
+/* =========================================================
+   animacoes.css  —  keyframes em uso e utilitários de revelação
+   ========================================================= */
+
+@keyframes subir {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes surgir {
+  from {
+    opacity: 0;
+    transform: scale(0.985) translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes risco {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes entra-painel {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes surge {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* pulso único e discreto do marcador no mapa */
+@keyframes pulsar {
+  0% {
+    box-shadow: 0 0 0 0 rgba(224, 27, 45, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 18px rgba(224, 27, 45, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(224, 27, 45, 0);
+  }
+}
+
+@keyframes barra {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ---- revelação no scroll ---- */
+.revelar {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s var(--t-lenta), transform 0.6s var(--t-lenta);
+  transition-delay: var(--atraso, 0s);
+  will-change: opacity, transform;
+}
+
+.revelar.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.revelar--esquerda {
+  transform: translateX(-28px);
+}
+
+.revelar--direita {
+  transform: translateX(28px);
+}
+
+.revelar--escala {
+  transform: scale(0.97);
+}
+
+.revelar--escala.visivel {
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .revelar {
+    opacity: 1;
+    transform: none;
+  }
+  .hero__titulo span,
+  .hero__lead,
+  .hero__acoes,
+  .hero__selos,
+  .hero__arte,
+  .nav.aberta .nav__painel a {
+    animation: none;
+  }
+}

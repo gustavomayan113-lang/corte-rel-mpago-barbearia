@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corte Relâmpago | Barbearia Premium em São Paulo</title>
+  <meta
+    name="description"
+    content="A Corte Relâmpago é a barbearia premium do centro de São Paulo: degradê na navalha, barba na toalha quente e atendimento com hora marcada. Corte + barba a partir de R$ 99."
+  />
+  <meta name="theme-color" content="#07080d" />
+  <meta name="author" content="Projeto de portfólio" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Corte Relâmpago | Barbearia Premium" />
+  <meta
+    property="og:description"
+    content="Corte na navalha, barba premium e acabamento de salão. Agende seu horário na Corte Relâmpago."
+  />
+  <meta property="og:image" content="estaticos/img/fotos/hero.jpg" />
+
+  <link rel="icon" href="estaticos/img/favicon.svg" type="image/svg+xml" />
+
+  <!-- tipografia -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- folha de estilo principal (compõe as camadas de estaticos/css) -->
+  <link rel="stylesheet" href="estaticos/css/main.css" />
+</head>
+
+<body>
+  <a class="pular-para-conteudo" href="#conteudo">Ir para o conteúdo</a>
+
+  <!-- =========================================================
+       NAVBAR
+       ========================================================= -->
+  <header class="nav" id="nav">
+    <div class="container nav__interno">
+      <a class="nav__marca" href="#topo" aria-label="Corte Relâmpago — página inicial">
+        <img class="nav__logo" src="estaticos/img/logo.svg" alt="" width="42" height="42" />
+        <span class="nav__nome">
+          <b>Corte Relâmpago</b>
+          <span>barbearia premium · desde 2009</span>
+        </span>
+      </a>
+
+      <nav class="nav__links" aria-label="Navegação principal">
+        <a class="nav__link" href="#servicos">Serviços</a>
+        <a class="nav__link" href="#galeria">Cortes</a>
+        <a class="nav__link" href="#equipe">Equipe</a>
+        <a class="nav__link" href="#depoimentos">Clientes</a>
+        <a class="nav__link" href="#agenda">Agenda</a>
+        <a class="nav__link" href="#local">Como chegar</a>
+      </nav>
+
+      <div class="nav__acoes">
+        <a class="nav__telefone" href="tel:+551140028922" aria-label="Ligar para a barbearia">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" />
+          </svg>
+          (11) 4002-8922
+        </a>
+        <a class="btn btn--primario btn--pequeno" href="#agenda">Agendar</a>
+        <button class="nav__alternador" type="button" data-nav-toggle aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- painel do mobile -->
+    <div class="nav__painel" id="menu-mobile">
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Cortes</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#depoimentos">Clientes</a>
+      <a href="#agenda">Agenda</a>
+      <a href="#local">Como chegar</a>
+      <small>Rua Barão de Itapetininga, 480 — Bela Vista, SP</small>
+    </div>
+
+    <span class="nav__progresso" data-progress aria-hidden="true"></span>
+  </header>
+
+  <main id="conteudo">
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+    <section class="hero" id="topo">
+      <div class="container hero__interno">
+        <div class="hero__texto">
+          <span class="etiqueta etiqueta--viva">agenda aberta para esta semana</span>
+
+          <h1 class="hero__titulo">
+            <span class="linha-fina">barbearia premium · são paulo</span>
+            <span class="corte">corte</span>
+            <span class="relampago">relâmpago</span>
+          </h1>
+
+          <p class="lead hero__lead">
+            Dezessete anos afiando a mesma ideia: navalha quente, linha precisa e um
+            degradê desenhado para o seu tipo de cabelo. Chegou na hora, sai no horário —
+            sem desculpa e sem surpresa na conta.
+          </p>
+
+          <div class="hero__acoes">
+            <a class="btn btn--primario" href="#agenda">
+              Agendar horário
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a class="btn btn--fantasma" href="#galeria">Ver cortes do mês</a>
+          </div>
+
+          <div class="hero__selos">
+            <span class="etiqueta">sem espera</span>
+            <span class="etiqueta etiqueta--azul">café no balcão</span>
+            <span class="etiqueta etiqueta--vermelha">garantia de 7 dias</span>
+          </div>
+        </div>
+
+        <div class="hero__arte">
+          <figure class="hero__arte-quadro">
+            <img
+              src="estaticos/img/fotos/hero.jpg"
+              width="560"
+              height="640"
+              alt="Barbeiro fazendo um corte preciso no cliente em uma barbearia contemporânea"
+            />
+            <figcaption class="hero__arte-legenda">
+              <b>Assinatura da barbearia</b>
+              <span>degradê + toalha quente</span>
+            </figcaption>
+          </figure>
+
+          <div class="hero__ficha">
+            <div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2 15 9l7 .6-5.2 4.6L18.3 21 12 17.3 5.7 21l1.5-6.8L2 9.6 9 9Z" />
+              </svg>
+              <span><b>Nota 4,9</b><span>em 312 avaliações</span></span>
+            </div>
+            <div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" />
+              </svg>
+              <span><b>40 minutos</b><span>corte + barba</span></span>
+            </div>
+            <div>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2v6M5 8h14l-1 5a6 6 0 0 1-12 0Z" /><path d="M6 19h12" />
+              </svg>
+              <span><b>Bebida da barbearia</b><span>refrescante e liberada</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- estatísticas -->
+      <div class="container hero__stats">
+        <div class="cartao cartao-stat revelar" style="--atraso: 0.05s">
+          <b data-counter="17" data-sufixo="+">0</b>
+          <span>anos de cadeira</span>
+        </div>
+        <div class="cartao cartao-stat revelar" style="--atraso: 0.15s">
+          <b data-counter="12400" data-separador=".">0</b>
+          <span>cortes feitos</span>
+        </div>
+        <div class="cartao cartao-stat revelar" style="--atraso: 0.25s">
+          <b data-counter="9" data-sufixo=" min">0</b>
+          <span>tempo de espera médio</span>
+        </div>
+        <div class="cartao cartao-stat revelar" style="--atraso: 0.35s">
+          <b data-counter="98" data-sufixo="%">0</b>
+          <span>voltam em até 30 dias</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FRESTA DE SELOS
+         ========================================================= -->
+    <div class="selos">
+      <ul class="selos__lista">
+        <li class="selos__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+          navalha profissional
+        </li>
+        <li class="selos__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 8l7 5 7-5" /></svg>
+          degradê de precisão
+        </li>
+        <li class="selos__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17c3-8 6-8 9 0s6 8 9 0" /></svg>
+          barba na toalha quente
+        </li>
+        <li class="selos__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 18V6h7a4 4 0 0 1 0 8H6" /></svg>
+          cuidados de pele
+        </li>
+        <li class="selos__item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 15 9l7 .6-5.2 4.6L18.3 21 12 17.3 5.7 21l1.5-6.8L2 9.6 9 9Z" /></svg>
+          café por conta da barbearia
+        </li>
+      </ul>
+    </div>
+
+    <!-- =========================================================
+         SERVIÇOS
+         ========================================================= -->
+    <section class="secao" id="servicos">
+      <div class="fundo-luzes" aria-hidden="true"></div>
+      <div class="container">
+        <header class="cabecalho-secao cabecalho-secao--linha revelar">
+          <div class="cabecalho-secao__texto">
+            <span class="olho">cardápio da cadeira</span>
+            <h2>Serviços <span class="contorno-texto">sem surpresa</span></h2>
+          </div>
+          <p class="lead">
+            Preço fechado, combinado antes de você sentar. Todos os cortes
+            incluem consulta, lavagem e finalização.
+          </p>
+        </header>
+
+        <div class="servicos__grade">
+          <article class="cartao cartao-servico revelar" style="--atraso: 0.05s">
+            <div class="cartao-servico__topo">
+              <span class="cartao-servico__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" /><path d="M20 4 8.5 15.5M14 14l6 6" />
+                </svg>
+              </span>
+              <span class="etiqueta etiqueta--azul">mais pedido</span>
+            </div>
+            <h3>Corte signature</h3>
+            <p>Degradê desenhado no seu ângulo, laterais na navalha e finalização com balm e blower.</p>
+            <div class="cartao-servico__rodape">
+              <span class="preco"><small>a partir de</small>R$ 70</span>
+              <span class="duracao">40 min</span>
+            </div>
+          </article>
+
+          <article class="cartao cartao-servico revelar" style="--atraso: 0.1s">
+            <div class="cartao-servico__topo">
+              <span class="cartao-servico__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 20c4-10 12-10 16 0" /><path d="M7 20V10a5 5 0 0 1 10 0v10" /><path d="M9 20v-6h6v6" />
+                </svg>
+              </span>
+            </div>
+            <h3>Barba premium</h3>
+            <p>Toalha quente, navalha reta, alinhamento a olho e óleo de barba da barbearia no final.</p>
+            <div class="cartao-servico__rodape">
+              <span class="preco"><small>a partir de</small>R$ 55</span>
+              <span class="duracao">30 min</span>
+            </div>
+          </article>
+
+          <article class="cartao cartao-servico cartao-servico--destaque revelar" style="--atraso: 0.15s">
+            <div class="cartao-servico__topo">
+              <span class="cartao-servico__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 3 4 7v6c0 4.4 3.4 7.4 8 8.5 4.6-1.1 8-4.1 8-8.5V7Z" /><path d="m9 12 2 2 4-4" />
+                </svg>
+              </span>
+            </div>
+            <h3>Corte + barba</h3>
+            <p>O combo da barbearia: consulta, corte na navalha, barba esculpida e acabamento premium.</p>
+            <div class="cartao-servico__rodape">
+              <span class="preco"><small>economize R$ 26</small>R$ 99</span>
+              <span class="duracao">60 min</span>
+            </div>
+          </article>
+
+          <article class="cartao cartao-servico revelar" style="--atraso: 0.2s">
+            <div class="cartao-servico__topo">
+              <span class="cartao-servico__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 20 20 4" /><path d="M14 4h6v6" /><circle cx="8" cy="16" r="2.5" />
+                </svg>
+              </span>
+            </div>
+            <h3>Platinado com matiz</h3>
+            <p>Descoloração uniforme, matiz para o tom que você quer e tratamento com máscara proteica.</p>
+            <div class="cartao-servico__rodape">
+              <span class="preco"><small>consulta</small>R$ 150</span>
+              <span class="duracao">90 min</span>
+            </div>
+          </article>
+
+          <article class="cartao cartao-servico revelar" style="--atraso: 0.25s">
+            <div class="cartao-servico__topo">
+              <span class="cartao-servico__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M3 18c2-6 4-6 6 0s4 6 6 0 4-6 6 0" /><path d="M3 9c2-4 4-4 6 0s4 4 6 0 4-4 6 0" />
+                </svg>
+              </span>
+            </div>
+            <h3>Sobrancelha na navalha</h3>
+            <p>Design alinhado ao seu rosto, com ativo calmante para não deixar a pele irritada.</p>
+            <div class="cartao-servico__rodape">
+              <span class="preco"><small>avulso</small>R$ 25</span>
+              <span class="duracao">15 min</span>
+            </div>
+          </article>
+
+          <article class="cartao cartao-servico revelar" style="--atraso: 0.3s">
+            <div class="cartao-servico__topo">
+              <span class="cartao-servico__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 3v8a6 6 0 0 0 12 0V3" /><path d="M6 6H3M21 6h-3" />
+                </svg>
+              </span>
+            </div>
+            <h3>Corte infantil</h3>
+            <p>Até 10 anos, com cadeira infantil e todo o cuidado para garantir a paciência do pequeno: pipoca e desenho.</p>
+            <div class="cartao-servico__rodape">
+              <span class="preco"><small>até 10 anos</small>R$ 55</span>
+              <span class="duracao">30 min</span>
+            </div>
+          </article>
+        </div>
+
+        <!-- plano mensal + garantia -->
+        <div class="servicos__extra">
+          <div class="servicos__plano revelar revelar--esquerda">
+            <span class="etiqueta">clube do mês</span>
+            <h3>Clube Relâmpago</h3>
+            <p>
+              Para quem corta a cada 20 dias e não quer pensar em preço: quatro cortes, duas
+              barbas e uma manutenção por mês, com prioridade na agenda.
+            </p>
+            <ul class="servicos__plano-lista">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+                4 cortes signature ou social
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+                2 barbas premium por mês
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+                Manutenção de shape e sobrancelha
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+                Bebida, café e brassin da barbearia durante a visita
+              </li>
+            </ul>
+            <div class="servicos__plano-preco">
+              R$ 219 <del>R$ 279</del>
+              <span class="etiqueta etiqueta--vermelha">por mês</span>
+            </div>
+          </div>
+
+          <div class="servicos__garantia revelar revelar--direita">
+            <h3>Garantia de 7 dias</h3>
+            <p>
+              Voltou em até sete dias com o mesmo barbeiro, refazemos o ajuste — de graça e sem
+              discussão. É a forma mais simples de dizer que o serviço ficou bom.
+            </p>
+            <hr class="divisor-ouro" />
+            <div class="info-linha">
+              <span class="info-linha__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 8v4l3 2" /><circle cx="12" cy="12" r="9" />
+                </svg>
+              </span>
+              <span>
+                <b>Sem fila, sem espera</b>
+                <span>Agenda por blocos de 10 minutos com intervalo entre clientes.</span>
+              </span>
+            </div>
+            <div class="info-linha">
+              <span class="info-linha__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 20c4-10 12-10 16 0" /><path d="M8 20V9a4 4 0 0 1 8 0v11" />
+                </svg>
+              </span>
+              <span>
+                <b>Higiene sem exceção</b>
+                <span>Lavagem de ferramentas, capa trocada e mesa higienizada a cada cliente.</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- processo -->
+        <div class="servicos__extra" style="margin-top: var(--e-6)">
+          <div class="revealar revelar--esquerda" style="flex: 1 1 320px">
+            <span class="olho">como funciona</span>
+            <h3 style="font-family: var(--fonte-display); font-size: 2.4rem; text-transform: uppercase; margin-block: var(--e-3) var(--e-4)">
+              Quatro passos, zero mistério
+            </h3>
+            <p>
+              Do primeiro contato ao balm na finalização, o processo é o mesmo para todos —
+              cliente novo e cliente fiel. Você só precisa aparecer.
+            </p>
+          </div>
+          <div class="processo revelar revelar--direita" style="flex: 2 1 460px">
+            <div class="passo">
+              <b>Agende</b>
+              <p>WhatsApp ou formulário abaixo. Confirmamos em até 2 horas dentro do horário comercial.</p>
+            </div>
+            <div class="passo">
+              <b>Diagnóstico</b>
+              <p>Conversa rápida sobre textura, PMP e histórico: definimos o corte antes de começar.</p>
+            </div>
+            <div class="passo">
+              <b>Execução</b>
+              <p>Navalha, tesoura e máquina calibrada no seu caso. Nada de modelo pronto.</p>
+            </div>
+            <div class="passo">
+              <b>Manutenção</b>
+              <p>Você sai com o cardápio de retoque e a data certa para manter o shape.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         GALERIA
+         ========================================================= -->
+    <section class="secao secao--alternada" id="galeria">
+      <div class="container">
+        <header class="cabecalho-secao cabecalho-secao--linha revelar">
+          <div class="cabecalho-secao__texto">
+            <span class="olho">trabalhos recentes</span>
+            <h2>Cortes <span class="gradiente-texto">que saíram da cadeira</span></h2>
+          </div>
+          <p class="lead">
+            Fotos de trabalhos reais da equipe — clique para ampliar e ver os
+            detalhes do acabamento.
+          </p>
+        </header>
+
+        <div class="galeria__filtros revelar" role="group" aria-label="Filtrar cortes por categoria">
+          <button class="chip chip--filtro selecionado" type="button" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button class="chip chip--filtro" type="button" data-filtro="degrade" aria-pressed="false">Degradê</button>
+          <button class="chip chip--filtro" type="button" data-filtro="social" aria-pressed="false">Social</button>
+          <button class="chip chip--filtro" type="button" data-filtro="barba" aria-pressed="false">Barba</button>
+          <button class="chip chip--filtro" type="button" data-filtro="cacheado" aria-pressed="false">Cacheado</button>
+          <button class="chip chip--filtro" type="button" data-filtro="platinado" aria-pressed="false">Clareamento</button>
+        </div>
+
+        <div class="galeria__grade" data-galeria>
+          <figure class="galeria__item galeria__item--destaque revelar revelar--escala" data-categoria="degrade" data-titulo="Degradê na navalha" data-tag="com Bruno Tavares" data-imagem="estaticos/img/fotos/cliente-01.jpg" tabindex="0" role="button" aria-label="Ampliar foto: Degradê na navalha, vista traseira">
+            <img src="estaticos/img/fotos/cliente-01.jpg" alt="Vista traseira de um cliente com degradê recém-feito na navalha" loading="lazy" width="400" height="480" />
+            <span class="galeria__mais">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
+            </span>
+            <figcaption class="galeria__sobreposicao">
+              <b>Degradê na navalha</b>
+              <span>com Bruno Tavares</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item revelar" data-categoria="barba" data-titulo="Barba esculpida" data-tag="com Bruno Tavares" data-imagem="estaticos/img/fotos/cliente-02.jpg" tabindex="0" role="button" aria-label="Ampliar foto: Barba esculpida em fundo escuro">
+            <img src="estaticos/img/fotos/cliente-02.jpg" alt="Homem de barba longa e bem desenhada em camisa de Jeans, fundo escuro" loading="lazy" width="400" height="480" />
+            <span class="galeria__mais">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
+            </span>
+            <figcaption class="galeria__sobreposicao">
+              <b>Barba esculpida</b>
+              <span>com Bruno Tavares</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item revelar" data-categoria="social" data-titulo="Social em perfil" data-tag="com Caio Menezes" data-imagem="estaticos/img/fotos/cliente-03.jpg" tabindex="0" role="button" aria-label="Ampliar foto: corte social visto de perfil">
+            <img src="estaticos/img/fotos/cliente-03.jpg" alt="Homem com corte social moderno em perfil, dentro da barbearia" loading="lazy" width="400" height="480" />
+            <span class="galeria__mais">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
+            </span>
+            <figcaption class="galeria__sobreposicao">
+              <b>Social em perfil</b>
+              <span>com Caio Menezes</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item revelar" data-categoria="cacheado" data-titulo="Textura com volume" data-tag="com Léo Duarte" data-imagem="estaticos/img/fotos/cliente-04.jpg" tabindex="0" role="button" aria-label="Ampliar foto: textura e volume do cabelo">
+            <img src="estaticos/img/fotos/cliente-04.jpg" alt="Close do cabelo com textura e volume após o corte" loading="lazy" width="400" height="480" />
+            <span class="galeria__mais">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
+            </span>
+            <figcaption class="galeria__sobreposicao">
+              <b>Textura com volume</b>
+              <span>com Léo Duarte</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item revelar" data-categoria="degrade" data-titulo="Fade de precisão" data-tag="com Théo Ramos" data-imagem="estaticos/img/fotos/cliente-05.jpg" tabindex="0" role="button" aria-label="Ampliar foto: fade de precisão">
+            <img src="estaticos/img/fotos/cliente-05.jpg" alt="Corte masculino com desenho de fade preciso em barbearia" loading="lazy" width="400" height="480" />
+            <span class="galeria__mais">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
+            </span>
+            <figcaption class="galeria__sobreposicao">
+              <b>Fade de precisão</b>
+              <span>com Bruno Tavares</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item galeria__item--larga revelar" data-categoria="social" data-titulo="Social moderno" data-tag="com Caio Menezes" data-imagem="estaticos/img/fotos/cliente-06.jpg" tabindex="0" role="button" aria-label="Ampliar foto: corte social moderno">
+            <img src="estaticos/img/fotos/cliente-06.jpg" alt="Homem com corte social moderno e barba alinhada na barbearia" loading="lazy" width="400" height="480" />
+            <span class="galeria__mais">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
+            </span>
+            <figcaption class="galeria__sobreposicao">
+              <b>Social moderno</b>
+              <span>com Caio Menezes</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item revelar" data-categoria="barba" data-titulo="Barba no design" data-tag="com Bruno Tavares" data-imagem="estaticos/img/fotos/cliente-07.jpg" tabindex="0" role="button" aria-label="Ampliar foto: barba com design preciso">
+            <img src="estaticos/img/fotos/cliente-07.jpg" alt="Homem de barba desenhada usando boné, em fundo escuro" loading="lazy" width="400" height="480" />
+            <span class="galeria__mais">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
+            </span>
+            <figcaption class="galeria__sobreposicao">
+              <b>Barba no design</b>
+              <span>com Léo Duarte</span>
+            </figcaption>
+          </figure>
+
+          <figure class="galeria__item revelar" data-categoria="platinado" data-titulo="Clareamento com matiz" data-tag="com Caio Menezes" data-imagem="estaticos/img/fotos/cliente-08.jpg" tabindex="0" role="button" aria-label="Ampliar foto: clareamento com matiz">
+            <img src="estaticos/img/fotos/cliente-08.jpg" alt="Homem de cabelo claro em retrato de estúdio, com fundo escuro" loading="lazy" width="400" height="480" />
+            <span class="galeria__mais">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" /></svg>
+            </span>
+            <figcaption class="galeria__sobreposicao">
+              <b>Clareamento com matiz</b>
+              <span>com Caio Menezes</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- lightbox da galeria -->
+    <div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Visualização de corte" aria-hidden="true">
+      <div class="lightbox__caixa">
+        <button class="lightbox__fechar" type="button" data-lightbox-fechar aria-label="Fechar visualização">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12" /></svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--ant" type="button" data-lightbox-ant aria-label="Imagem anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18 9 12l6-6" /></svg>
+        </button>
+        <button class="lightbox__nav lightbox__nav--prox" type="button" data-lightbox-prox aria-label="Próxima imagem">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+        </button>
+        <img data-lightbox-img alt="Corte ampliado da galeria" />
+        <div class="lightbox__legenda">
+          <b data-lightbox-titulo>—</b>
+          <span data-lightbox-tag>—</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- =========================================================
+         EQUIPE
+         ========================================================= -->
+    <section class="secao" id="equipe">
+      <div class="fundo-luzes" aria-hidden="true"></div>
+      <div class="container">
+        <header class="cabecalho-secao cabecalho-secao--centro revelar">
+          <span class="olho olho--centro">quem senta na cadeira</span>
+          <h2>Equipe <span class="contorno-texto">Corte Relâmpago</span></h2>
+          <p class="lead">
+            Quatro barbeiros, quatro estilos. Você escolhe quem faz o seu corte — ou deixa a
+            recepção indicar.
+          </p>
+        </header>
+
+        <div class="equipe__grade">
+          <article class="cartao cartao-equipe revelar" style="--atraso: 0.05s">
+            <div class="cartao-equipe__foto">
+              <img src="estaticos/img/fotos/equipe-01.jpg" alt="Théo Ramos, mestre barbeiro, em pé no salão" loading="lazy" width="400" height="480" />
+            </div>
+            <div class="cartao-equipe__info">
+              <b class="cartao-equipe__nome">Théo Ramos</b>
+              <span class="cartao-equipe__cargo">mestre barbeiro · 12 anos de cadeira</span>
+              <div class="equipe__especialidade">
+                <span>degradê</span><span>social</span><span>fusão</span>
+              </div>
+              <div class="cartao-equipe__social">
+                <a href="#agenda" aria-label="Agendar com Théo Ramos">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+                </a>
+                <a href="#depoimentos" aria-label="Ver trabalhos de Théo Ramos">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao cartao-equipe revelar" style="--atraso: 0.1s">
+            <div class="cartao-equipe__foto">
+              <img src="estaticos/img/fotos/equipe-02.jpg" alt="Bruno Tavares, especialista em barba, preparando o material" loading="lazy" width="400" height="480" />
+            </div>
+            <div class="cartao-equipe__info">
+              <b class="cartao-equipe__nome">Bruno Tavares</b>
+              <span class="cartao-equipe__cargo">barba & navalhado · 9 anos</span>
+              <div class="equipe__especialidade">
+                <span>barba cheia</span><span>cavanhaque</span><span>design</span>
+              </div>
+              <div class="cartao-equipe__social">
+                <a href="#agenda" aria-label="Agendar com Bruno Tavares">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+                </a>
+                <a href="#depoimentos" aria-label="Ver trabalhos de Bruno Tavares">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao cartao-equipe revelar" style="--atraso: 0.15s">
+            <div class="cartao-equipe__foto">
+              <img src="estaticos/img/fotos/equipe-03.jpg" alt="Caio Menezes, colorista, com tesoura e avental" loading="lazy" width="400" height="480" />
+            </div>
+            <div class="cartao-equipe__info">
+              <b class="cartao-equipe__nome">Caio Menezes</b>
+              <span class="cartao-equipe__cargo">colorista & social · 7 anos</span>
+              <div class="equipe__especialidade">
+                <span>platinado</span><span>matiz</span><span>balayage</span>
+              </div>
+              <div class="cartao-equipe__social">
+                <a href="#agenda" aria-label="Agendar com Caio Menezes">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+                </a>
+                <a href="#depoimentos" aria-label="Ver trabalhos de Caio Menezes">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="cartao cartao-equipe revelar" style="--atraso: 0.2s">
+            <div class="cartao-equipe__foto">
+              <img src="estaticos/img/fotos/equipe-04.jpg" alt="Léo Duarte, estilista, fazendo um corte na máquina" loading="lazy" width="400" height="480" />
+            </div>
+            <div class="cartao-equipe__info">
+              <b class="cartao-equipe__nome">Léo Duarte</b>
+              <span class="cartao-equipe__cargo">estilista & fades · 5 anos</span>
+              <div class="equipe__especialidade">
+                <span>cacheado</span><span>careca</span><span>juvenil</span>
+              </div>
+              <div class="cartao-equipe__social">
+                <a href="#agenda" aria-label="Agendar com Léo Duarte">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
+                </a>
+                <a href="#depoimentos" aria-label="Ver trabalhos de Léo Duarte">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="equipe__fita revelar">
+          <b>Sem sorteio de barbeiro</b>
+          <p>
+            O agendamento sempre oferece os quatro profissionais. Se você já tem um favorito,
+            indica o nome e a gente garante; se preferir, o primeiro disponível atende em média
+            9 minutos depois do seu horário.
+          </p>
+          <a class="btn btn--fantasma btn--pequeno" href="#agenda">Escolher profissional</a>
+        </div>
+
+        <!-- depoimento em destaque -->
+        <div class="destaque-depoimento revelar revelar--escala">
+          <div>
+            <span class="estrelas" aria-label="5 de 5 estrelas">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+            </span>
+            <blockquote class="destaque-depoimento__citacao">
+              Volto aqui desde 2016 e nunca mais deixei a cadeira do Théo. O degrade nasce
+              junto com o cabelo — parece que o rosto ganhou ângulo.
+            </blockquote>
+            <div class="destaque-depoimento__nota">
+              <b>Marcos Vinícius</b>
+              <span>cliente desde 2016 · 61 visitas</span>
+            </div>
+          </div>
+          <div class="pilha">
+            <div class="cartao cartao-stat">
+              <b>4,9</b>
+              <span>nota média em 312 avaliações</span>
+            </div>
+            <div class="cartao cartao-stat">
+              <b>98%</b>
+              <span>clientes que voltam em 30 dias</span>
+            </div>
+            <div class="cartao cartao-stat">
+              <b>17</b>
+              <span>anos na mesma esquina</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         DEPOIMENTOS
+         ========================================================= -->
+    <section class="secao secao--alternada depoimentos" id="depoimentos">
+      <div class="container">
+        <header class="cabecalho-secao cabecalho-secao--centro revelar">
+          <span class="olho olho--centro">quem sentou na cadeira</span>
+          <h2>Clientes <span class="gradiente-texto">no microfone</span></h2>
+          <p class="lead">
+            Avaliações coletadas no Google Meu Negócio e no balcão, nos últimos 12 meses.
+          </p>
+        </header>
+
+        <div class="depoimentos__janela revelar">
+          <div class="depoimentos__trilho depoimentos__trilho--anel" data-slider-trilho>
+            <article class="depoimentos__item" data-slide>
+              <div class="cartao cartao-depoimento">
+                <div>
+                  <span class="estrelas" aria-label="5 de 5 estrelas">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                  </span>
+                  <p class="cartao-depoimento__texto">
+                    Cheguei com um degrade torto de outra barbearia e o Théo reconstruiu do zero.
+                    Explicou cada passo, deixou eu escolher o formato e o resultado ficou
+                    exatamente como ele falou — que isso é raro.
+                  </p>
+                </div>
+                <div class="cartao-depoimento__autor">
+                  <span class="cartao-depoimento__avatar" aria-hidden="true">MV</span>
+                  <span>
+                    <b>Marcos Vinícius</b>
+                    <span>produtor musical · 61 visitas</span>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="depoimentos__item" data-slide>
+              <div class="cartao cartao-depoimento">
+                <div>
+                  <span class="estrelas" aria-label="5 de 5 estrelas">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                  </span>
+                  <p class="cartao-depoimento__texto">
+                    Atendimento pontual das duas da tarde em ponto. A barba sai com acabamento
+                    de papel, sem arranhão, e o óleo da barbearia dura o dia todo. Preço justo para
+                    esse nível.
+                  </p>
+                </div>
+                <div class="cartao-depoimento__autor">
+                  <span class="cartao-depoimento__avatar" aria-hidden="true">RF</span>
+                  <span>
+                    <b>Rafael Ferreira</b>
+                    <span>advogado · 24 visitas</span>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="depoimentos__item" data-slide>
+              <div class="cartao cartao-depoimento">
+                <div>
+                  <span class="estrelas" aria-label="5 de 5 estrelas">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                  </span>
+                  <p class="cartao-depoimento__texto">
+                    Fiz platinado com o Caio e o tom ficou exatamente o que pedi no catálogo.
+                    Ele explicou o processo, o custo do retoque e o intervalo ideal. Zero
+                    surpresa.
+                  </p>
+                </div>
+                <div class="cartao-depoimento__autor">
+                  <span class="cartao-depoimento__avatar" aria-hidden="true">DN</span>
+                  <span>
+                    <b>Diego Nakamura</b>
+                    <span>designer · 18 visitas</span>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="depoimentos__item" data-slide>
+              <div class="cartao cartao-depoimento">
+                <div>
+                  <span class="estrelas" aria-label="5 de 5 estrelas">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                  </span>
+                  <p class="cartao-depoimento__texto">
+                    O corte do meu filho de 7 anos foi a primeira vez que ele não chorou na
+                    cadeira. Tem brinquedo, tem desenho, tem paciência. Voltamos todo mês.
+                  </p>
+                </div>
+                <div class="cartao-depoimento__autor">
+                  <span class="cartao-depoimento__avatar" aria-hidden="true">LP</span>
+                  <span>
+                    <b>Leandro Prado</b>
+                    <span>pai do Miguel · 14 visitas</span>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="depoimentos__item" data-slide>
+              <div class="cartao cartao-depoimento">
+                <div>
+                  <span class="estrelas" aria-label="5 de 5 estrelas">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                  </span>
+                  <p class="cartao-depoimento__texto">
+                    Nome no copo, música baixa, luz boa. Parece café, parece estúdio, mas o
+                    corte é de barbearia de bairro com experiência de spa.
+                  </p>
+                </div>
+                <div class="cartao-depoimento__autor">
+                  <span class="cartao-depoimento__avatar" aria-hidden="true">BS</span>
+                  <span>
+                    <b>Bruno Salles</b>
+                    <span>empreendedor · 32 visitas</span>
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="depoimentos__item" data-slide>
+              <div class="cartao cartao-depoimento">
+                <div>
+                  <span class="estrelas" aria-label="5 de 5 estrelas">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7Z" /></svg>
+                  </span>
+                  <p class="cartao-depoimento__texto">
+                    Cacheado é difícil de acertar. O Léo entendeu a textura sem eu explicar
+                    nada e definiu o volume certo — só manutenção a cada 25 dias.
+                  </p>
+                </div>
+                <div class="cartao-depoimento__autor">
+                  <span class="cartao-depoimento__avatar" aria-hidden="true">SF</span>
+                  <span>
+                    <b>Sérgio Falcão</b>
+                    <span>engenheiro · 21 visitas</span>
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="depoimentos__controle revelar">
+          <button class="bolha-setas" type="button" data-slider-ant aria-label="Depoimentos anteriores">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M11 6l-6 6 6 6" /></svg>
+          </button>
+          <div class="depoimentos__bolinhas" data-slider-bolinhas role="tablist" aria-label="Selecionar depoimento"></div>
+          <button class="bolha-setas" type="button" data-slider-prox aria-label="Próximos depoimentos">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M13 6l6 6-6 6" /></svg>
+          </button>
+        </div>
+
+        <div class="resumo-avaliacoes revelar">
+          <span class="resumo-avaliacoes__nota">
+            4,9
+            <small>de 5 em 312 avaliações</small>
+          </span>
+          <span class="resumo-avaliacoes__fonte">coletadas no google meu negócio · 2025</span>
+          <span class="resumo-avaliacoes__fonte">78% dos clientes chegam por indicação</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         AGENDA
+         ========================================================= -->
+    <section class="secao" id="agenda">
+      <div class="fundo-luzes" aria-hidden="true"></div>
+      <div class="container">
+        <header class="cabecalho-secao cabecalho-secao--centro revelar">
+          <span class="olho olho--centro">hora marcada, sem fila</span>
+          <h2>Agende <span class="contorno-texto">seu horário</span></h2>
+          <p class="lead">
+            Escolha o serviço, o profissional e o melhor horário. Confirmamos pelo WhatsApp em
+            até 2 horas dentro do horário comercial.
+          </p>
+        </header>
+
+        <div class="agenda__grade">
+          <div class="agenda__form revelar revelar--esquerda">
+            <h3>Marcar corte</h3>
+            <p>Preencha os dados e escolha o melhor horário disponível.</p>
+
+            <form class="formulario" data-form novalidate>
+              <div class="campo-linha">
+                <div class="campo">
+                  <label for="nome">Nome completo</label>
+                  <input id="nome" name="nome" type="text" placeholder="Ex.: Gustavo Almeida" required autocomplete="name" />
+                </div>
+                <div class="campo">
+                  <label for="telefone">WhatsApp</label>
+                  <input id="telefone" name="telefone" type="tel" placeholder="(11) 90000-0000" required autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="campo-linha">
+                <div class="campo">
+                  <label for="servico">Serviço</label>
+                  <select id="servico" name="servico" required>
+                    <option value="">Selecione…</option>
+                    <option>Corte signature — R$ 70</option>
+                    <option>Barba premium — R$ 55</option>
+                    <option>Corte + barba — R$ 99</option>
+                    <option>Platinado com matiz — R$ 150</option>
+                    <option>Sobrancelha na navalha — R$ 25</option>
+                    <option>Corte infantil — R$ 55</option>
+                    <option>Clube Relâmpago (mensal)</option>
+                  </select>
+                </div>
+                <div class="campo">
+                  <label for="profissional">Profissional</label>
+                  <select id="profissional" name="profissional" required>
+                    <option value="">Primeiro disponível</option>
+                    <option>Théo Ramos — degrade e social</option>
+                    <option>Bruno Tavares — barba e navalhado</option>
+                    <option>Caio Menezes — colorista e social</option>
+                    <option>Léo Duarte — cacheado e fades</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="campo-linha">
+                <div class="campo">
+                  <label for="data">Data preferida</label>
+                  <input id="data" name="data" type="date" required />
+                </div>
+                <div class="campo">
+                  <label for="momento">Momento do dia</label>
+                  <select id="momento" name="momento">
+                    <option>Manhã (09h — 12h)</option>
+                    <option selected>Tarde (12h — 18h)</option>
+                    <option>Noite (18h — 20h)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="pilha pilha--pequena">
+                <div class="agenda__horarios-linha">
+                  <small>horários mais procurados</small>
+                  <span class="etiqueta etiqueta--azul">4 vagas</span>
+                </div>
+                <div class="chips" data-horarios role="group" aria-label="Escolher horário">
+                  <button class="chip" type="button" data-chip="09:30">09:30</button>
+                  <button class="chip" type="button" data-chip="11:00">11:00</button>
+                  <button class="chip" type="button" data-chip="13:30">13:30</button>
+                  <button class="chip selecionado" type="button" data-chip="15:00" aria-pressed="true">15:00</button>
+                  <button class="chip" type="button" data-chip="17:00">17:00</button>
+                  <button class="chip" type="button" data-chip="19:00">19:00</button>
+                </div>
+              </div>
+
+              <div class="campo">
+                <label for="observacoes">Observações (opcional)</label>
+                <textarea id="observacoes" name="observacoes" placeholder="Ex.: manter as laterais altas, tirar pouco volume em cima…"></textarea>
+              </div>
+
+              <div class="agenda__resumo">
+                <span>
+                  <b id="resumo-servico">Nenhum serviço escolhido</b>
+                  <span id="resumo-horario">horário: 15:00</span>
+                </span>
+                <span class="etiqueta" id="resumo-preco">R$ —</span>
+              </div>
+
+              <button class="btn btn--primario btn--bloco" type="submit">
+                Confirmar horário
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+              </button>
+
+              <p class="nota-demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 16v-4M12 8h.01" /></svg>
+                Formulário demonstrativo criado para portfólio: nenhum dado é enviado, salvo ou
+                compartilhado. Nenhum servidor está envolvido.
+              </p>
+
+              <div class="aviso" data-aviso role="status" aria-live="polite">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 12 2 2 4-4" /><circle cx="12" cy="12" r="9" /></svg>
+                <span data-aviso-texto>Horário reservado! (simulação de front-end)</span>
+              </div>
+            </form>
+          </div>
+
+          <div class="agenda__contato revelar revelar--direita">
+            <div class="agenda__destaque">
+              <span class="etiqueta etiqueta--vermelha">só esta semana</span>
+              <h3>Primeira vez aqui?</h3>
+              <p>
+                Na primeira visita fazemos a consulta completa, fotografamos o corte para você
+                levar de referência e ajustamos a manutenção sugerida.
+              </p>
+              <div class="preco-grande">
+                <small>primeira consulta</small>
+                R$ 0
+              </div>
+              <a class="btn btn--vermelho btn--bloco" href="#local">Como chegar</a>
+              <div class="agenda__oferta">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7ZM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7Z" /></svg>
+                Traga um amigo: o segundo ganha massagem relaxante de cortesia.
+              </div>
+            </div>
+
+            <div class="painel-info">
+              <div class="info-linha">
+                <span class="info-linha__icone">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z" />
+                  </svg>
+                </span>
+                <span>
+                  <b>WhatsApp direto</b>
+                  <span>(11) 98812-4477 — das 9h às 20h</span>
+                </span>
+              </div>
+              <div class="info-linha">
+                <span class="info-linha__icone">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="2" y="4" width="20" height="16" rx="3" /><path d="M8 2v4M16 2v4M2 10h20" />
+                  </svg>
+                </span>
+                <span>
+                  <b>Agenda online</b>
+                  <span>Este formulário — versão de demonstração</span>
+                </span>
+              </div>
+              <div class="info-linha">
+                <span class="info-linha__icone">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 8v4l3 2" /><circle cx="12" cy="12" r="9" />
+                  </svg>
+                </span>
+                <span>
+                  <b>Espera máxima</b>
+                  <span>9 minutos em média, 15 em dia de sábado</span>
+                </span>
+              </div>
+              <hr class="divisor-ouro" />
+              <table class="horarios">
+                <tbody>
+                  <tr><th scope="row">Segunda a sexta</th><td>09h — 20h</td></tr>
+                  <tr><th scope="row">Sábado</th><td>09h — 18h</td></tr>
+                  <tr class="fechado"><th scope="row">Domingo</th><td>fechado</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         LOCAL / COMO CHEGAR + FAQ
+         ========================================================= -->
+    <section class="secao secao--alternada" id="local">
+      <div class="container">
+        <header class="cabecalho-secao cabecalho-secao--linha revelar">
+          <div class="cabecalho-secao__texto">
+            <span class="olho">esquina do são joaquim</span>
+            <h2>Como <span class="gradiente-texto">chegar</span></h2>
+          </div>
+          <p class="lead">
+            Fica a 350 metros do metrô São Joaquim, com 40 minutos de estacionamento pago na
+            rua ao lado.
+          </p>
+        </header>
+
+        <div class="local__grade">
+          <div class="mapa revelar revelar--escala" role="img" aria-label="Mapa ilustrativo indicando a barbearia na esquina com a Rua Barão de Itapetininga">
+            <span class="mapa__rua mapa__rua--h1"></span>
+            <span class="mapa__rua mapa__rua--h2"></span>
+            <span class="mapa__rua mapa__rua--v1"></span>
+            <span class="mapa__acesso">estacionamento pago · 60 m</span>
+            <div class="mapa__marca">
+              <span class="mapa__pino">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16" /><path d="M4 21h16M10 7h4M10 11h4" />
+                </svg>
+              </span>
+              <b>Corte Relâmpago</b>
+            </div>
+            <div class="mapa__legenda">
+              <span><i style="background: rgba(227,178,60,.5)"></i> rua barão de itapetininga</span>
+              <span><i style="background: rgba(59,130,246,.5)"></i> rua dom pedro i</span>
+              <span><i style="background: rgba(224,27,45,.6)"></i> estação são joaquim</span>
+            </div>
+          </div>
+
+          <div class="pilha revelar revelar--direita">
+            <div class="painel-info">
+              <div class="info-linha">
+                <span class="info-linha__icone">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                <span>
+                  <b>Endereço</b>
+                  <span>Rua Barão de Itapetininga, 480 — Bela Vista, São Paulo/SP, 01002-000</span>
+                </span>
+              </div>
+              <div class="info-linha">
+                <span class="info-linha__icone">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M8 19c-2-1-3-3.5-3-6a7 7 0 0 1 14 0c0 2.5-1 5-3 6" /><path d="M12 19v-5" /><circle cx="12" cy="11" r="1" />
+                  </svg>
+                </span>
+                <span>
+                  <b>Transporte</b>
+                  <span>Metrô São Joaquim (linha 1) a 350 m · ônibus na rua dom pedro i</span>
+                </span>
+              </div>
+              <div class="info-linha">
+                <span class="info-linha__icone">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M5 17h14M6 17V9h12v8M9 9V6h6v3" /><path d="M8 21h.01M16 21h.01" />
+                  </svg>
+                </span>
+                <span>
+                  <b>Estacionamento</b>
+                  <span>Rotativo pago na Rua Dom Pedro I, 60 m da loja, das 8h às 20h</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="cartao cartao-servico">
+              <h3>Acessibilidade</h3>
+              <p>
+                Entrada sem degrau, sanitário adaptado e cadeira com apoio de braço. Fale com a
+                recepção para reservar um horário com mais tempo de cadeira.
+              </p>
+              <div class="cartao-servico__rodape">
+                <span class="duracao">cachorro bem-vindo</span>
+                <span class="duracao">bebida não alcoólica inclusa</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="faq">
+          <details class="faq__item revelar">
+            <summary class="faq__pergunta">
+              Preciso agendar com antecedência?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </summary>
+            <div class="faq__resposta">
+              Na média, o horário fica disponível com 2 a 3 dias de antecedência. Sextas e
+              sábados esgotam primeiro — nesse caso, vale entrar na lista de espera pelo
+              WhatsApp.
+            </div>
+          </details>
+
+          <details class="faq__item revelar" style="--atraso: 0.05s">
+            <summary class="faq__pergunta">
+              Vocês atendem crianças?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </summary>
+            <div class="faq__resposta">
+              Sim, a partir de 4 anos, com cadeira infantil, desenho e paciência. O atendimento
+              infantil custa R$ 55 e dura em média 30 minutos.
+            </div>
+          </details>
+
+          <details class="faq__item revelar" style="--atraso: 0.1s">
+            <summary class="faq__pergunta">
+              O preço muda se eu só quiser a barba?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </summary>
+            <div class="faq__resposta">
+              Não. O preço é sempre combinado antes de você sentar. Se entrar
+              pensando em fazer só a barba e quiser adicionar o corte, o valor muda na hora e
+              você decide.
+            </div>
+          </details>
+
+          <details class="faq__item revelar" style="--atraso: 0.15s">
+            <summary class="faq__pergunta">
+              Vocês vendem produtos para manutenção?
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14" /></svg>
+            </summary>
+            <div class="faq__resposta">
+              Sim, óleos, balm, shampoo de barba e pentes. Recomendamos o que já usamos no
+              atendimento para o resultado durar mais entre as visitas.
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       RODAPÉ
+       ========================================================= -->
+  <footer class="rodape">
+    <div class="container">
+      <div class="rodape__topo">
+        <div class="rodape__marca">
+          <a class="rodape__logo-linha" href="#topo">
+            <img src="estaticos/img/logo.svg" alt="" width="48" height="48" />
+            <span>
+              <b>Corte Relâmpago</b>
+              <span>barbearia premium</span>
+            </span>
+          </a>
+          <p>
+            Barbearia de bairro com ambiência de estúdio. Corte na navalha, barba esculpida e
+            aveludada — na Bela Vista desde 2009.
+          </p>
+          <div class="rodape__social">
+            <a href="#depoimentos" aria-label="Instagram da Corte Relâmpago">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><path d="M17.5 6.5h.01" /></svg>
+            </a>
+            <a href="#depoimentos" aria-label="Facebook da Corte Relâmpago">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8h3V4h-3a5 5 0 0 0-5 5v2H6v4h3v7h4v-7h3l1-4h-4V9a1 1 0 0 1 1-1Z" /></svg>
+            </a>
+            <a href="#agenda" aria-label="WhatsApp da Corte Relâmpago">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.4 8.4 0 1 1 21 11.5Z" /><path d="M8.6 8.2c.3-.6.7-.6 1-.6h.6c.2 0 .5 0 .7.5l.7 1.6c.1.3 0 .5-.2.7l-.4.4c-.1.2-.2.4 0 .7.4.7 1.1 1.4 1.8 1.8.3.2.5.1.7 0l.4-.4c.2-.2.4-.3.7-.2l1.6.7c.5.2.5.5.5.7 0 .3 0 .7-.6 1-.4.3-1 .5-1.5.4-1.6-.3-3.3-1.6-4.5-2.8-1.3-1.3-2.4-2.8-2.6-4.2-.1-.5 0-1 .3-1.2Z" /></svg>
+            </a>
+            <a href="#local" aria-label="Google Maps da Corte Relâmpago">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" /></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navegação</h4>
+          <div class="rodape__lista">
+            <a href="#servicos">Serviços e preços</a>
+            <a href="#galeria">Galeria de cortes</a>
+            <a href="#equipe">Nossa equipe</a>
+            <a href="#depoimentos">Avaliações</a>
+            <a href="#agenda">Agendar horário</a>
+            <a href="#local">Como chegar</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Serviços</h4>
+          <div class="rodape__lista">
+            <a href="#servicos">Corte signature — R$ 70</a>
+            <a href="#servicos">Barba premium — R$ 55</a>
+            <a href="#servicos">Corte + barba — R$ 99</a>
+            <a href="#servicos">Platinado com matiz — R$ 150</a>
+            <a href="#servicos">Corte infantil — R$ 55</a>
+            <a href="#servicos">Clube Relâmpago — R$ 219/mês</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+          <div class="rodape__lista">
+            <span>Rua Barão de Itapetininga, 480 — Bela Vista, SP</span>
+            <a href="tel:+551140028922">(11) 4002-8922</a>
+            <a href="tel:+5511988124477">(11) 98812-4477 — WhatsApp</a>
+            <span>Seg a sex 09h — 20h · Sáb 09h — 18h</span>
+          </div>
+          <h4 style="margin-top: var(--e-5)">Lista de bons cortes</h4>
+          <form class="rodape__newsletter" data-form-newsletter>
+            <input type="email" name="email" placeholder="seu@email.com" aria-label="Seu e-mail" required />
+            <button type="submit" aria-label="Assinar a lista">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </button>
+          </form>
+          <div class="rodape__selo">
+            <img src="estaticos/img/selo.svg" alt="Selo desde 2009" width="54" height="54" />
+            <span>17 anos na mesma esquina</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="rodape__base">
+        <span>© <span data-ano>2026</span> Corte Relâmpago — todos os direitos reservados.</span>
+        <span>CNPJ 12.345.678/0001-90 · São Paulo/SP</span>
+        <span>
+          <a href="#topo">Política de privacidade</a> ·
+          <a href="#topo">Termos de uso</a>
+        </span>
+      </div>
+
+      <div class="rodape__aviso">
+        <b>Projeto de portfólio:</b> barbearia, endereço, preços, equipe e clientes são fictícios.
+        Nenhum dado é coletado ou enviado.
+      </div>
+    </div>
+  </footer>
+
+  <button class="sobe" type="button" data-sobe aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script src="estaticos/js/utilitarios.js" defer></script>
+  <script src="estaticos/js/navegacao.js" defer></script>
+  <script src="estaticos/js/revelacao.js" defer></script>
+  <script src="estaticos/js/galeria.js" defer></script>
+  <script src="estaticos/js/depoimentos.js" defer></script>
+  <script src="estaticos/js/agenda.js" defer></script>
+  <script src="estaticos/js/rodape.js" defer></script>
+  <script src="estaticos/js/main.js" defer></script>
+</body>
+</html>

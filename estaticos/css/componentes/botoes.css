@@ -1,0 +1,104 @@
+/* =========================================================
+   componentes/botoes.css
+   ========================================================= */
+
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--e-2);
+  padding: 0.9rem 1.7rem;
+  border-radius: var(--r-full);
+  font-family: var(--fonte-titulo);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: transform var(--t-media), box-shadow var(--t-media), color var(--t-media),
+    border-color var(--t-media), background-color var(--t-media);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+.btn svg {
+  width: 1.05em;
+  height: 1.05em;
+  flex-shrink: 0;
+  transition: transform var(--t-media);
+}
+
+.btn:hover svg {
+  transform: translateX(3px);
+}
+
+/* ---- primário: dourado ---- */
+.btn--primario {
+  background: var(--dourado);
+  color: #1a1204;
+  box-shadow: var(--sombra-ouro);
+}
+
+.btn--primario:hover {
+  background: var(--dourado-claro);
+  box-shadow: 0 10px 26px rgba(227, 178, 60, 0.24);
+}
+
+/* ---- vermelho ---- */
+.btn--vermelho {
+  background: var(--vermelho);
+  color: #fff;
+  box-shadow: var(--sombra-vermelha);
+}
+
+.btn--vermelho:hover {
+  background: var(--vermelho-vivo);
+  box-shadow: 0 10px 26px rgba(224, 27, 45, 0.28);
+}
+
+/* ---- fantasma (contorno) ---- */
+.btn--fantasma {
+  border: 1px solid var(--linha-forte);
+  color: var(--branco);
+  background: transparent;
+}
+
+.btn--fantasma:hover {
+  border-color: var(--linha-ouro);
+  color: var(--dourado-claro);
+  background: rgba(227, 178, 60, 0.06);
+}
+
+.btn--pequeno {
+  padding: 0.6rem 1.15rem;
+  font-size: 0.82rem;
+}
+
+.btn--bloco {
+  width: 100%;
+}
+
+/* seta circular ao lado do texto */
+.bolha-setas {
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--r-full);
+  border: 1px solid var(--linha-forte);
+  color: var(--dourado);
+  transition: background var(--t-media), color var(--t-media), transform var(--t-media);
+}
+
+.bolha-setas:hover {
+  background: var(--dourado);
+  color: var(--preto);
+  transform: translateX(4px);
+}

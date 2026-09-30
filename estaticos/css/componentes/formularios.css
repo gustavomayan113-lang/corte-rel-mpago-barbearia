@@ -1,0 +1,249 @@
+/* =========================================================
+   componentes/formularios.css
+   ========================================================= */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e-4);
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  font-family: var(--fonte-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cinza-escuro);
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: var(--r-md);
+  border: 1px solid var(--linha);
+  background: rgba(7, 8, 13, 0.6);
+  color: var(--branco);
+  font-size: 0.96rem;
+  transition: border-color var(--t-media), box-shadow var(--t-media), background var(--t-media);
+}
+
+.campo textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+  color: var(--cinza-escuro);
+}
+
+.campo input:hover,
+.campo select:hover,
+.campo textarea:hover {
+  border-color: var(--linha-forte);
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--dourado);
+  background: rgba(7, 8, 13, 0.85);
+  box-shadow: 0 0 0 3px rgba(227, 178, 60, 0.12);
+}
+
+.campo select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e3b23c' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  background-size: 18px;
+  padding-right: 2.6rem;
+}
+
+.campo select option {
+  background: var(--grafite);
+  color: var(--branco);
+}
+
+.campo-linha {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--e-4);
+}
+
+/* ---- botões de escolha (chips) ---- */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--e-2);
+}
+
+.chip {
+  position: relative;
+  padding: 0.5rem 0.95rem;
+  border-radius: var(--r-full);
+  border: 1px solid var(--linha-forte);
+  font-family: var(--fonte-titulo);
+  font-size: 0.88rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--cinza);
+  transition: all var(--t-media);
+}
+
+.chip:hover {
+  border-color: var(--dourado);
+  color: var(--dourado-claro);
+  transform: translateY(-2px);
+}
+
+.chip.selecionado,
+.chip[aria-pressed="true"] {
+  background: var(--grad-ouro);
+  border-color: transparent;
+  color: #1a1204;
+  font-weight: 700;
+  box-shadow: var(--sombra-ouro);
+}
+
+.chip--filtro {
+  padding: 0.55rem 1.15rem;
+  font-size: 0.82rem;
+}
+
+/* ---- aviso do formulário ---- */
+.aviso {
+  display: none;
+  align-items: center;
+  gap: var(--e-3);
+  padding: var(--e-4);
+  border-radius: var(--r-md);
+  border: 1px solid rgba(61, 220, 132, 0.35);
+  background: rgba(61, 220, 132, 0.08);
+  color: #9ef0bd;
+  font-size: 0.92rem;
+}
+
+.aviso.visivel {
+  display: flex;
+  animation: surge var(--t-lenta);
+}
+
+.aviso svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.aviso--erro {
+  border-color: rgba(224, 27, 45, 0.4);
+  background: rgba(224, 27, 45, 0.1);
+  color: #ff9aa5;
+}
+
+.nota-demo {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--e-2);
+  font-size: 0.76rem;
+  color: var(--cinza-escuro);
+  line-height: 1.5;
+}
+
+.nota-demo svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--dourado);
+}
+
+/* ---- painel de informações ---- */
+.painel-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e-4);
+  padding: var(--e-5);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--linha);
+  background: linear-gradient(160deg, rgba(14, 42, 92, 0.35) 0%, rgba(11, 14, 23, 0.9) 60%);
+}
+
+.info-linha {
+  display: flex;
+  gap: var(--e-3);
+  align-items: flex-start;
+}
+
+.info-linha__icone {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--linha-ouro);
+  background: rgba(227, 178, 60, 0.08);
+  color: var(--dourado);
+}
+
+.info-linha__icone svg {
+  width: 19px;
+  height: 19px;
+}
+
+.info-linha b {
+  display: block;
+  font-family: var(--fonte-titulo);
+  font-size: 1.02rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.info-linha span,
+.info-linha p {
+  font-size: 0.9rem;
+  color: var(--cinza);
+}
+
+/* tabela de horários */
+.horarios {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.horarios tr {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--e-4);
+  padding: 0.6rem 0;
+  border-bottom: 1px dashed var(--linha);
+  font-size: 0.92rem;
+}
+
+.horarios th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--cinza);
+}
+
+.horarios td {
+  font-family: var(--fonte-mono);
+  font-size: 0.82rem;
+  color: var(--dourado-claro);
+}
+
+.horarios .fechado td {
+  color: var(--vermelho-vivo);
+}

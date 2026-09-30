@@ -1,0 +1,121 @@
+/* =========================================================
+   secoes/equipe.css
+   ========================================================= */
+
+.equipe__grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--e-4);
+}
+
+.equipe__grade .cartao {
+  animation-delay: var(--atraso, 0s);
+}
+
+.equipe__fita {
+  display: flex;
+  align-items: center;
+  gap: var(--e-4);
+  margin-top: var(--e-6);
+  padding: var(--e-4) var(--e-5);
+  border-radius: var(--r-md);
+  border: 1px solid var(--linha-ouro);
+  background: rgba(227, 178, 60, 0.05);
+  flex-wrap: wrap;
+}
+
+.equipe__fita b {
+  font-family: var(--fonte-titulo);
+  font-size: 1.1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dourado-claro);
+}
+
+.equipe__fita p {
+  flex: 1 1 260px;
+  font-size: 0.92rem;
+}
+
+.equipe__especialidade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--e-2);
+}
+
+.equipe__especialidade span {
+  padding: 3px 9px;
+  border-radius: var(--r-full);
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.28);
+  font-family: var(--fonte-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--azul-luz);
+}
+
+/* depoimento em destaque */
+.destaque-depoimento {
+  position: relative;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+  margin-top: var(--e-7);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: var(--r-lg);
+  border: 1px solid var(--linha-ouro);
+  background:
+    radial-gradient(80% 110% at 0% 0%, rgba(14, 42, 92, 0.42) 0%, transparent 62%),
+    var(--grafite);
+  overflow: hidden;
+}
+
+.destaque-depoimento__citacao {
+  font-family: var(--fonte-titulo);
+  font-size: clamp(1.3rem, 2.4vw, 1.9rem);
+  line-height: 1.35;
+  color: var(--branco);
+  margin-block: var(--e-4);
+}
+
+.destaque-depoimento__citacao::before {
+  content: "“";
+  display: block;
+  font-size: 4rem;
+  line-height: 0.6;
+  color: var(--dourado);
+  opacity: 0.5;
+}
+
+.destaque-depoimento__nota {
+  display: flex;
+  align-items: center;
+  gap: var(--e-3);
+  margin-top: var(--e-4);
+  padding-top: var(--e-4);
+  border-top: 1px solid var(--linha);
+  flex-wrap: wrap;
+}
+
+.destaque-depoimento__nota b {
+  font-family: var(--fonte-titulo);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.destaque-depoimento__nota span {
+  font-family: var(--fonte-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cinza-escuro);
+}
+
+@media (max-width: 820px) {
+  .destaque-depoimento {
+    grid-template-columns: 1fr;
+  }
+}

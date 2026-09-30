@@ -1,0 +1,30 @@
+/* =========================================================
+   main.css  —  ponto de entrada
+   Ordem: tokens -> base -> componentes -> seções -> animações
+   ========================================================= */
+
+/* base */
+@import url("base/variaveis.css");
+@import url("base/reset.css");
+@import url("base/tipografia.css");
+@import url("base/utilitarios.css");
+
+/* componentes */
+@import url("componentes/botoes.css");
+@import url("componentes/navbar.css");
+@import url("componentes/cards.css");
+@import url("componentes/formularios.css");
+@import url("componentes/selos.css");
+
+/* seções */
+@import url("secoes/hero.css");
+@import url("secoes/servicos.css");
+@import url("secoes/galeria.css");
+@import url("secoes/equipe.css");
+@import url("secoes/depoimentos.css");
+@import url("secoes/agenda.css");
+@import url("secoes/local.css");
+@import url("secoes/rodape.css");
+
+/* animações por último */
+@import url("animacoes.css");

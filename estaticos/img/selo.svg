@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs><linearGradient id="sg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5d06a"/><stop offset="1" stop-color="#c18f1c"/></linearGradient></defs>
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#sg)" stroke-width="2"/>
+  <circle cx="100" cy="100" r="76" fill="none" stroke="#e01b2d" stroke-width="1.5" stroke-dasharray="4 8"/>
+  <path d="M108 52 78 104h20l-6 42 32-56h-22Z" fill="url(#sg)"/>
+  <text x="100" y="168" text-anchor="middle" font-family="Barlow Condensed, Arial, sans-serif" font-size="14" letter-spacing="4" fill="#e3b23c">DESDE 2009</text>
+</svg>

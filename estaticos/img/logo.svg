@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Corte Relampago">
+  <defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f5d06a"/><stop offset="1" stop-color="#c18f1c"/></linearGradient><linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3f5fa"/><stop offset="1" stop-color="#c9ccd8"/></linearGradient></defs>
+  <path d="M32 3 57 12v22c0 14-10 23-25 27C17 57 7 48 7 34V12Z" fill="#0b1122"/>
+  <path d="M32 3 57 12v22c0 14-10 23-25 27C17 57 7 48 7 34V12Z" fill="none" stroke="url(#lg1)" stroke-width="2.4"/>
+  <path d="M35 12 21 34h10l-4 18 16-24H32Z" fill="url(#lg1)"/>
+  <g stroke="url(#lg2)" stroke-width="2.6" stroke-linecap="round" fill="none">
+    <path d="M15 22 24 40M49 22 40 40"/>
+  </g>
+  <circle cx="32" cy="41" r="3" fill="#e01b2d"/>
+</svg>

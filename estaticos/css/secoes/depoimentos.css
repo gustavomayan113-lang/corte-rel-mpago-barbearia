@@ -1,0 +1,103 @@
+/* =========================================================
+   secoes/depoimentos.css
+   ========================================================= */
+
+.depoimentos {
+  position: relative;
+}
+
+.depoimentos__controle {
+  display: flex;
+  align-items: center;
+  gap: var(--e-3);
+  margin-top: var(--e-5);
+}
+
+.depoimentos__bolinhas {
+  display: flex;
+  gap: var(--e-2);
+  margin-inline: auto 0;
+}
+
+.depoimentos__bolinha {
+  width: 28px;
+  height: 4px;
+  border-radius: var(--r-full);
+  background: var(--linha-forte);
+  overflow: hidden;
+  transition: background var(--t-media);
+}
+
+.depoimentos__bolinha.ativa {
+  background: var(--linha-ouro);
+}
+
+.depoimentos__bolinha.ativa::after {
+  content: "";
+  display: block;
+  height: 100%;
+  background: var(--grad-ouro);
+  animation: barra 5s linear;
+}
+
+.depoimentos__trilho {
+  display: flex;
+  gap: 0;
+  transition: transform var(--t-lenta);
+}
+
+.depoimentos__item {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.depoimentos__janela {
+  overflow: hidden;
+}
+
+/* o trilho ocupa a janela; cada "página" avança 1/3 (ou 1) da largura */
+.depoimentos__trilho--anel {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .depoimentos__trilho--anel .depoimentos__item {
+    flex: 0 0 33.3333%;
+    padding-inline: calc(var(--e-4) / 2);
+  }
+}
+
+/* avaliação resumida */
+.resumo-avaliacoes {
+  display: flex;
+  align-items: center;
+  gap: var(--e-5);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--e-6);
+  padding-top: var(--e-5);
+  border-top: 1px solid var(--linha);
+}
+
+.resumo-avaliacoes__nota {
+  display: flex;
+  align-items: center;
+  gap: var(--e-2);
+  font-family: var(--fonte-titulo);
+  font-size: 1.6rem;
+  color: var(--dourado-claro);
+}
+
+.resumo-avaliacoes__nota small {
+  font-family: var(--fonte-texto);
+  font-size: 0.85rem;
+  color: var(--cinza);
+}
+
+.resumo-avaliacoes__fonte {
+  font-family: var(--fonte-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--cinza-escuro);
+}
